@@ -216,7 +216,8 @@ call <sid>hi('Todo', s:cdNone, s:cdLeftMid, 'none', {})
 
 " HTML:
 call <sid>hi('htmlTag', s:cdGray, {}, 'none', {})
-call <sid>hi('htmlEndTag', s:cdGray, {}, 'none', {})
+call <sid>hi('htmlEndTag', s:cdYellow, {}, 'none', {})
+call <sid>hi('xmlEndTag', s:cdYellow, {}, 'none', {})
 call <sid>hi('htmlTagName', s:cdBlue, {}, 'none', {})
 call <sid>hi('htmlSpecialTagName', s:cdBlue, {}, 'none', {})
 call <sid>hi('htmlArg', s:cdLightBlue, {}, 'none', {})
@@ -246,8 +247,22 @@ call <sid>hi('cssUnitDecorators', s:cdOrange, {}, 'none', {})
 call <sid>hi('jsVariableDef', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('jsFuncArgs', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('jsRegexpString', s:cdLightRed, {}, 'none', {})
-call <sid>hi('jsThis', s:cdBlue, {}, 'none', {})
+call <sid>hi('jsThis', s:cdBlueGreen, {}, 'none', {})
+" JS mine
+call <sid>hi('jsClassDefinition', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('jsObjectKey', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('jsFunctionKey', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('jsObjectStringKey', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('jsFuncCall', s:cdYellow, {}, 'none', {})
 
 " Ruby:
-call <sid>hi('rubyClassNameTag', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('rubyClassNameTag', s:cdGreen, {}, 'none', {})
 
+" Go:
+call <sid>hi('goTypeName', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('goDeclaration', s:cdBlue, {}, 'none', {})
+call <sid>hi('goDirective', s:cdBlue, {}, 'none', {})
+call <sid>hi('goDeclType', s:cdBlue, {}, 'none', {})
+call <sid>hi('goTypeDecl', s:cdBlue, {}, 'none', {})
+call <sid>hi('goBuiltins', s:cdYellow, {}, 'none', {})
+call <sid>hi('goMethodCall', s:cdYellow, {}, 'none', {})
